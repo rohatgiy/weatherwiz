@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+    <style>
+    body {
+        background-color: cornflowerblue;
+        font-family: "Roboto";
+        color:whitesmoke;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .button{
+        background-color: rgb(73, 110, 179);
+        border: none;
+        padding: 10px 20px;
+        color:whitesmoke;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-family: "Roboto";
+    }
+    .button:hover {
+        background-color: rgb(55, 84, 138);
+    }
+
+    .weather {
+        font-size: 18px;
+        
+    }
+    </style>
+
+    <head>
+        <title>
+            weatherwiz
+        </title>
+        <link rel="icon" 
+        href = "https://images.vexels.com/media/users/3/128968/isolated/preview/f484a28a720553706482245b0e80c481-flat-umbrella-icon-by-vexels.png" 
+        type = "image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div align="center">
+            <img height = "100px" width = "430px" src="file:\\MPHOFS01.mother-parkers.com\USERS$\rohatsum\pythonDir\weather_webapp\LogoButLongThisTime.png">
+        </div> 
+        <br></br>
+        <div>
+            <form id="form1" align="center" method="get">
+                <p align="center">which city's weather are you looking for?</p>
+                <input id="city_name" type="text">
+                <p align="center">what is the country code of the city?</p>
+                <input id="country_name" type="text">
+            </form>
+            <br>
+            <button style="display: block; margin: 0 auto;" id="submitbutton" class="button" onclick="submitForm()">
+                submit
+                <script lang="text/javascript" src="file:\\MPHOFS01.mother-parkers.com\USERS$\rohatsum\pythonDir\weather_webapp\weather.js"></script>
+            </button>
+        </div>
+        <div align="center" id="weather">
+            <h1 id="location"></h1>
+            <h2 id="temp"></h2>
+            <p id="humidity"></p>
+            <p id="windspeed"></p>
+        </div>
+    </body>
+</html>
